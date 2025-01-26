@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steem Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Steem Analytics Dashboard</h1>
+    <div class="price-container">
+      <p id="steem-price">Steem Price: Loading...</p>
+      <p id="sbd-price">SBD Price: Loading...</p>
+    </div>
+    <div class="search-container">
+      <input type="text" id="account-search" placeholder="Enter Steem account name">
+      <button id="search-button">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="account-details">
+      <h2>Account Details</h2>
+      <ul>
+        <li id="account-voting-power">Voting Power: </li>
+        <li id="account-reputation">Reputation: </li>
+        <li id="account-creation-date">Account Created: </li>
+        <li id="account-posts"> Posts: </li>        
+      </ul>
+    </section>
+
+    <section id="trending-tags">
+      <h2>Trending Tags</h2>
+      <ul id="tags-list"></ul>
+    </section>
+
+    <section id="active-accounts-list">
+      <h2>Active Witness Accounts</h2>
+      <ul id="accounts-list"></ul>
+    </section>
+
+    <section id="latest-posts">
+      <h2>Latest Posts</h2>
+      <button id="fetch-posts-button" class="fetch-posts-button">Fetch New Posts</button>
+      <div id="posts-list">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with Love by @mohammadfaisal</a></p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
