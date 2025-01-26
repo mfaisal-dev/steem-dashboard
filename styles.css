@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .price-container {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .search-container {
+    margin-top: 1rem;
+  }
+  
+  .search-container input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .search-container button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for all buttons */
+  button,
+  .fetch-posts-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    display: inline-block; 
+  }
+  
+  /* Button hover effect */
+  button:hover,
+  .fetch-posts-button:hover {
+    background-color: #007bff; /* Change to blue on hover */
+    transform: translateY(-2px); /* Slightly raise the button */
+  }
+  
+  /* Button active (clicked) effect */
+  button:active,
+  .fetch-posts-button:active {
+    background-color: #0056b3; /* Darker blue when pressed */
+    transform: translateY(1px); /* Button moves slightly down when clicked */
+  }
+  
+  /* Button focus effect (for accessibility) */
+  button:focus,
+  .fetch-posts-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Blue glow around the button */
+  }
+  
+  main {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+  
+  section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 1rem;
+    width: 250px;
+  }
+  
+  h2 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4caf50;
+    color: white;
+  }
+  
+  #posts-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }
+  
+  #fetch-posts-button {
+    margin-bottom: 1rem; 
+    width: 200px; 
+    align-self: center; 
+    display: inline-block; 
+  }
+  
